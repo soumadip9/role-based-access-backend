@@ -1,6 +1,6 @@
 # Role-Based Access Backend — Scalable REST API + Frontend
 
-A production-ready REST API built with **Node.js**, **Express**, and **MongoDB** featuring JWT authentication, role-based access control (RBAC), full CRUD operations, Swagger documentation, and a Vanilla JS frontend test console — all served from a single server.
+A production-ready **Music Management REST API** built with **Node.js**, **Express**, and **MongoDB**. Users can register, log in, and manage their own music entries (create, update, delete, list). Admins have elevated access to view all users' entries, approve pending submissions, and delete any record. Every request is secured with **JWT authentication**, roles are enforced at the route level with **middleware-based RBAC**, and all inputs are validated before hitting the database. The project ships with interactive **Swagger API docs**, a **Postman collection**, and a **Vanilla JS frontend console** — all served from a single Express server.
 
 ---
 
