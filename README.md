@@ -19,7 +19,7 @@ A production-ready REST API built with **Node.js**, **Express**, and **MongoDB**
 Use this account for evaluator access to admin endpoints:
 
 - Email: `admin@gmail.com`
-- Password: `admin@123`
+- Password: `admin123`
 
 ---
 
