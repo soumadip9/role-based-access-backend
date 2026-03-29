@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>API Test Console</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body>
+  <div class="bg-shape bg-one"></div>
+  <div class="bg-shape bg-two"></div>
+
+  <header class="hero">
+    <p class="eyebrow">Scalable REST API Tester</p>
+    <h1>Auth + RBAC + CRUD Playground</h1>
+    <p class="subtitle">Register, login, and test protected endpoints from one interface.</p>
+    <div class="hero-links">
+      <span>Base URL: /api/v1</span>
+    </div>
+  </header>
+
+  <main class="grid">
+    <section class="card">
+      <h2>Authentication</h2>
+      <div id="sessionBadge" class="badge warn">Logged out</div>
+
+      <form id="registerForm" class="stack">
+        <h3>Register</h3>
+        <input name="username" placeholder="Username" required />
+        <input name="email" type="email" placeholder="Email" required />
+        <input name="password" type="password" placeholder="Password" required />
+        <button type="submit">Create Account</button>
+      </form>
+
+      <form id="loginForm" class="stack">
+        <h3>Login</h3>
+        <input name="identity" placeholder="Username or Email" required />
+        <input name="password" type="password" placeholder="Password" required />
+        <button type="submit">Login</button>
+      </form>
+
+      <div class="row">
+        <button id="meBtn" class="secondary">Fetch Profile</button>
+        <button id="logoutBtn" class="secondary">Logout</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Protected Dashboard</h2>
+      <p class="muted">This section verifies JWT-based access control and role details.</p>
+      <div id="profileCard" class="profile-card">Login and click Fetch Profile to load dashboard data.</div>
+    </section>
+
+    <section class="card music-card">
+      <h2>Music CRUD</h2>
+      <form id="createMusicForm" class="stack">
+        <h3>Create Music</h3>
+        <input name="title" placeholder="Title" required />
+        <input name="file" type="file" placeholder="Select audio file (optional)" />
+        <button type="submit">Create</button>
+      </form>
+
+      <form id="updateMusicForm" class="stack">
+        <h3>Update Music</h3>
+        <input name="id" placeholder="Music ID" required />
+        <input name="title" placeholder="New Title" />
+        <input name="file" type="file" placeholder="Select new audio file (optional)" />
+        <button type="submit">Update</button>
+      </form>
+
+      <form id="deleteMusicForm" class="stack">
+        <h3>Delete Music</h3>
+        <input name="id" placeholder="Music ID" required />
+        <button type="submit">Delete</button>
+      </form>
+
+      <div class="row">
+        <button id="listMusicBtn">List My/All Music</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Admin Panel</h2>
+      <form id="confirmMusicForm" class="stack">
+        <h3>Confirm Music (Approve)</h3>
+        <input name="musicId" placeholder="Music ID" required />
+        <button type="submit">Confirm</button>
+      </form>
+
+      <form id="adminDeleteMusicForm" class="stack">
+        <h3>Delete Music (Admin)</h3>
+        <input name="musicId" placeholder="Music ID" required />
+        <button type="submit">Delete</button>
+      </form>
+
+      <div class="row">
+        <button id="listAllMusicBtn">List All Music</button>
+      </div>
+    </section>
+
+    <section class="card full">
+      <h2>Response Console</h2>
+      <pre id="output">Ready.</pre>
+    </section>
+  </main>
+
+  <script type="module" src="/assets/js/main.js"></script>
+</body>
+</html>
