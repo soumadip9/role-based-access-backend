@@ -10,9 +10,7 @@ const registerValidator = [
         .notEmpty().withMessage('email is required')
         .isEmail({
             allow_display_name: false,
-            require_tld: true,
-            allow_utf8_local_part: false,
-            domain_specific_validation: true
+            require_tld: true
         }).withMessage('valid email is required')
         .normalizeEmail(),
     body('password')
