@@ -14,6 +14,15 @@ A production-ready REST API built with **Node.js**, **Express**, and **MongoDB**
 
 ---
 
+## Demo Admin Credentials
+
+Use this account for evaluator access to admin endpoints:
+
+- Email: `admin@gmail.com`
+- Password: `admin@123`
+
+---
+
 ## Tech Stack
 
 | Layer | Technology |
@@ -213,16 +222,6 @@ To create an admin: set `role: "admin"` directly in MongoDB for a user document.
 
 ---
 
-## Demo Admin Credentials
-
-Use this account for evaluator access to admin endpoints:
-
-- Email: `admin@example.com`
-- Password: `Admin@123`
-
-Note: Change these credentials after evaluation if this project remains public.
-
----
 
 ## API Documentation
 
