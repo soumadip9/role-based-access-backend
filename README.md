@@ -213,6 +213,17 @@ To create an admin: set `role: "admin"` directly in MongoDB for a user document.
 
 ---
 
+## Demo Admin Credentials
+
+Use this account for evaluator access to admin endpoints:
+
+- Email: `admin@example.com`
+- Password: `Admin@123`
+
+Note: Change these credentials after evaluation if this project remains public.
+
+---
+
 ## API Documentation
 
 - **Swagger UI:** `http://localhost:3000/api-docs` — interactive, try endpoints directly
